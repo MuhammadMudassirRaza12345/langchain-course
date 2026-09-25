@@ -1,3 +1,6 @@
+from typing import List
+
+from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -6,6 +9,7 @@ from langchain.tools import tool
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 from tavily import TavilyClient
+
 
 tavily = TavilyClient()
 
